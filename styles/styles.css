@@ -1,3 +1,11 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
     background-color: steelblue;
     padding: 10px;
@@ -27,9 +35,6 @@ p {
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0,0.2); /* 1 */
-    padding: 1rem;
     background-color: #eee;
     color: #333;
     text-align: center;
@@ -53,3 +58,12 @@ footer{
 
     text-align: center; }
 
+
+   /* Class Selectors */
+
+   .box{
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 1rem;
+    color: lightslategray;
+   }
