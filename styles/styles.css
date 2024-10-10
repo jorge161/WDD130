@@ -39,19 +39,34 @@ aside {
     color: #333;
     text-align: center;
     position: relative;
+     
 }
 
 aside img{
     width: 200px;
     height: auto;
+    position: relative;
+} 
+
+aside h2{
+    position: absolute;
+    z-index: 1;
+    left: 105px;
+}
+
+main{
+    padding: 10px;
 }
 
 main img {
     max-width: 150px;
     height: auto;
+    float: right;
+    margin: 5px;
+     
 }
 
-p{padding: 0;}
+ 
 
 footer{
     margin-top: 15px;
@@ -66,5 +81,6 @@ footer{
     margin: 1rem;
     border: 1px solid rgba(0,0,0,.1);
     padding: 1rem;
+    background-color: #ddd;
     color: lightslategray;
    }
