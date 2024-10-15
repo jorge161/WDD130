@@ -42,17 +42,19 @@ aside {
      
 }
 
+aside h2{
+    position: absolute;
+    z-index: 1;
+    left: 105px;
+}
+
 aside img{
     width: 200px;
     height: auto;
     position: relative;
 } 
 
-aside h2{
-    position: absolute;
-    z-index: 1;
-    left: 105px;
-}
+
 
 main{
     padding: 10px;

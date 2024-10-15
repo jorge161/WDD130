@@ -1,0 +1,91 @@
+/**https://coolors.co/8e9b90-93c0a4-b6c4a2-d4cdab **/
+
+*{ padding: 5px;
+   box-sizing: border-box;
+}
+
+:root{
+
+
+    --primay-color:#93c0a4;
+    --secondary-color:#8e9b90;
+    --accent1-color:#b6c4a2;
+    --accent2-color:#8E9B90;
+}
+
+a{
+    text-decoration: none;}
+
+
+h1, h2, a{
+    color: var(--primay-color);
+}
+
+p{
+color: var(--secondary-color)
+}
+/*************************************************************************/
+footer .sociallinks a {
+    display: inline-block; /* Esto permite aplicar ancho y alto */
+    width: 50px;           /* Limita el ancho */
+    height: 50px;          /* Limita la altura */
+    margin: 10px;           /* Añade un poco de espacio entre los iconos */
+}
+
+footer .sociallinks img {
+    width: 100%;           /* Asegura que la imagen se ajuste al tamaño del contenedor */
+    height: 100%;          /* La imagen también se ajusta en altura */
+    object-fit: cover;     /* Mantiene la relación de aspecto de la imagen */
+}
+/***************************************************************************/
+
+/*The div with the class of hero is positioned relative in order the h1 and the article elements to be positioned on top of the hero image using absolute positioning.*/
+ 
+
+ .hero{
+     
+    position:relative ;
+ }
+.hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+ .hero h1{
+    color: rgb(248, 248, 255);
+    z-index: 1;
+    position: absolute;
+    top: 5%;
+    right: 45%;
+      
+    
+ }
+
+ .hero article {
+    
+    position: absolute;
+    padding: 5%;
+    width: 100%;
+    height: 10%;
+    top: 20%;
+    
+
+ }
+  
+.hero article img{
+    z-index: 1;
+    width: 15%;
+    height: auto;
+    float: right;
+     
+}
+
+.hero article p {
+    color: white;
+
+}
+
+
+ 
