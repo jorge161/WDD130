@@ -48,10 +48,7 @@ legend{
     font-size: 1.3rem;
 }
 
-labe{
-    text-align: right;
-    padding-right: 1rem;
-}
+
 
 input, select, textarea{
     padding: 0.5rem;
@@ -81,7 +78,7 @@ button:hover{
 
 footer {
     margin: 1rem;
-    width: 650px;
+    width: auto;
     text-align: center;
     font-size: 0.8rem;
     color: #777;
