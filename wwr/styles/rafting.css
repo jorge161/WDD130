@@ -8,10 +8,12 @@
     --accent1-color:#b6c4a2;
     --accent2-color:#8E9B90;
     --standar-padding: 10px;
+    --text-color: white;
 }
 
 *{ padding: 1px;
    box-sizing: border-box;
+
 }
 
 a{
@@ -23,23 +25,14 @@ h1, h2, a{
 }
 
 p{
-color: var(--secondary-color)
-}
-/*************************************************************************/
-footer .sociallinks a {
-    display: inline-block; /* Esto permite aplicar ancho y alto */
-    width: 50px;           /* Limita el ancho */
-    height: 50px;          /* Limita la altura */
-    margin: 10px;           /* Añade un poco de espacio entre los iconos */
-}
+color: var(--text-color)}
 
-footer .sociallinks img {
-    width: 100%;           /* Asegura que la imagen se ajuste al tamaño del contenedor */
-    height: 100%;          /* La imagen también se ajusta en altura */
-    object-fit: cover;     /* Mantiene la relación de aspecto de la imagen */
-}
 /***************************************************************************/
 
+.space{
+    background-color: var(--secondary-color);
+    height: 10px;
+}
 /*The div with the class of hero is positioned relative in order the h1 and the article elements to be positioned on top of the hero image using absolute positioning.*/
  
 
@@ -60,7 +53,7 @@ footer .sociallinks img {
     right: 1%;
     text-align: center;
     width: 98%; /* Asegura que el h1 abarque todo el ancho del div */
-    color: white; /* Color del texto */
+    color: var(--text-color)
     background-color: rgba(0, 0, 0, 0.2); /* Fondo negro semitransparente */
     
      z-index: 2; /* Coloca el h1 por encima de la imagen de fondo */
@@ -79,7 +72,7 @@ footer .sociallinks img {
 .hero article p {
     width: 100%;
     position: relative;        /* Cambié de absolute a relative para que se posicione dentro del article */
-    color: white;
+    color: var(--text-color)
     margin: 0;
 }
 
@@ -97,4 +90,114 @@ section img {
     margin-bottom: 10px;  /* Añade espacio entre las imágenes, si lo deseo */
 }
 
+ /**************** Header enhancement******************/
+ .header-grid-container{
+    background-color: var(--primay-color);
+    display: grid;
+    display: flex;
+    grid-template-columns:3fr 3fr;
+    align-items: center;  
+    justify-content: space-around;  
+    
+
+ }
+ /**************** Nav enhancement******************/
+ .nav-flex-container{
+    display:flex;
+     
+
+ }
+
+ nav a{
+
+    width: 150px;
+    height: 50px;
+    color: var(--text-color)
+     
+ }
+
+/**************** section-history and history-div enhancement******************/
  
+.section-history {
+    background-color: var(--primay-color);
+    text-align: center   
+}
+
+h2{
+    color: var(--text-color)
+}
+.history-div{
+
+    display: grid;
+    display: flex;
+         
+    justify-content: space-evenly; 
+    justify-content: space-around;
+}
+
+/**************** section-Adventures awaits you******************/
+
+.section-grid{
+ border: 50px;
+ background-color:var(--primay-color);
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+  
+}
+
+.item1{
+    grid-column: 3/5;
+}
+.item2{
+    align-items: center;
+    width:150px ;
+    height: auto;
+    grid-row: 2/3 ;
+}  
+.item3{
+    width:150px ;
+    height: auto;
+    grid-row: 2/3 ;
+}
+.item4{
+    width:150px ;
+    height: auto;
+    grid-row: 2/3 ;     
+}
+.item5{
+    width:150px ;
+    height: auto;
+    grid-row: 2/3 ;     
+}
+.item6{
+    width:150px ;
+    height: auto;
+    grid-row: 2/3 ;     
+}
+
+/*************************************************************************/
+footer {
+    background-color:var(--accent2-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+     
+     
+}
+
+footer p{
+    margin: 0 auto;
+    
+}
+ 
+.sociallinks {
+    width: 50px;
+    height: 50px;
+     
+}
+ 
+ .nav-icon{
+   display: flex;
+   gap: 100px;
+ }
