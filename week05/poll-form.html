@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="poll-form.css
+    ">
+    <title>WWD 130 | HTML Form - User Poll</title>
+</head>
+<body>
+    <head>
+        <h1>WWD 130 | Jorge Silva |HTML Form - User Poll</h1>
+
+    </head>
+    <main>
+        <form> 
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-item column2"> 
+                    <label for="fullname">Full Name<input type="text" id="Fullname" name="fullname" ></label>
+                </div>
+                <div class="form-item column2">    
+                    <label for="usermail">E-mail<input type="text" id="email" name="email" ></label>
+                </div>    
+            </fieldset>
+            
+            <fieldset>
+                <legend>Questions</legend>
+                <label for="browser">What is your favorite browser? </label>
+                    <div class="column1">
+                        <select name="browser" id="browser">
+                            <option value="chrome">Chrome</option>
+                            <option value="safary">Safary</option>
+                            <option value="opera">Opera</option>
+                            <option value="edge">Edge</option>
+                            <option value="brave">Brave</option>
+                            <option value="other">Other</option>   
+                        </select>
+                    </div>
+                <label for="pet">Do you have a household pet?</label>
+                    <div>
+                        <input type="checkbox" id="pet" name="pet" class="checkbox">
+                    </div>        
+                <label for="feedback">List the places you have lived:</label>
+                <textarea name="feedback" id="feedback" rows="5" placeholder="Chamelecon, La Lima, Choloma, Cortes"></textarea>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+
+        </form>
+    </main>
+    <footer>
+        <p>&copy;2024 | HTML - USer Poll Activity | Jorge Silva  </p>
+
+    </footer>
+
+    
+</body>
+</html>
